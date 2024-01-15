@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-prj"
+version = "0.1.0"
+description = ""
+authors = ["rdab <12466344+rdab@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "python_prj", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.109.0"
+jinja2 = "^3.1.3"
+uvicorn = "^0.25.0"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
